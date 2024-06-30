@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0c1226;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e2233;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #7289da;
+}
+
+.connect-button {
+  background-color: #7289da;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.connect-button:hover {
+  background-color: #5a6fc7;
+}
+
+.app-navigation {
+  background-color: #1e2233;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.app-navigation a {
+  color: #7289da;
+  text-decoration: none;
+  padding: 5px 15px;
+  margin: 0 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.app-navigation a:hover {
+  color: #5a6fc7;
+}
+
+.nav-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  transition: opacity 0.3s;
+}
+
+.app-navigation a:hover .nav-icon {
+  opacity: 0.7;
+}
+
+main {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.stake-list {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.stake-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.stake-list th,
+.stake-list td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #7289da;
+}
+
+.stake-list th {
+  background-color: #7289da;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.stake-list tr:nth-child(even) {
+  background-color: #1e2233;
+}
+
+.action-button {
+  background-color: #7289da;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.action-button:hover {
+  background-color: #5a6fc7;
+}
+
+@media (max-width: 768px) {
+  .stake-list {
+    font-size: 14px;
+  }
+  
+  .stake-list th,
+  .stake-list td {
+    padding: 8px;
+  }
+  
+  .action-button {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #1e2233;
+  color: #7289da;
+  border: 1px solid #7289da;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button:hover,
+.pagination button.active {
+  background-color: #7289da;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .pagination button {
+    padding: 3px 8px;
+    font-size: 14px;
+  }
+}
